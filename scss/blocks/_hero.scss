@@ -56,7 +56,12 @@
     line-height: normal;
     max-width: 250px;
     width: 100%;
-    margin-top: 20px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+  }
+
+  &__dec {
+    font-weight: 600;
   }
 
   &__time {
