@@ -1,0 +1,73 @@
+.hero {
+  height: 100vh;
+
+  &__subheader-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__body {
+    color: #423D37;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    max-width: 142px;
+    width: 100%;
+    margin-bottom: 55px;
+  }
+
+  &__container {
+    position: relative;
+    background-image: url('../../img/hero-bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 100vh;
+  }
+
+  &__header {
+    color: #FFF;
+    text-align: center;
+    text-shadow: 0px 0px 6.8px #FFF, 0px 0px 6.2px rgba(255, 255, 255, 0.70), 0px 0px 4px rgba(255, 255, 255, 0.25), 0px 0px 4px rgba(255, 255, 255, 0.25), 0px 0px 4px rgba(115, 93, 84, 0.67);
+    font-family: Vollkorn;
+    font-size: 55px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 55px;
+  }
+
+  &__subheader {
+    color: #423D37;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    max-width: 250px;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  &__time {
+    color: #FFF;
+    text-shadow: 0px 0px 4.8px rgba(255, 255, 255, 0.25);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 121.429%;
+    max-width: 140px;
+    width: 100%;
+    padding-bottom: 40px;
+  }
+}
