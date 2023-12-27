@@ -86,4 +86,14 @@
     line-height: normal;
     letter-spacing: -0.16px;
   }
+
+  @media screen and (max-width: 405px) {
+    &__week {
+      font-size: 25px;
+    }
+
+    &__date-number {
+      font-size: 45px;
+    }
+  }
 }

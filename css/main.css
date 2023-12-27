@@ -168,6 +168,11 @@ body {
   max-width: 300px;
   width: 100%;
 }
+@media screen and (max-width: 405px) {
+  .hero__header {
+    font-size: 45px;
+  }
+}
 
 .date {
   display: flex;
@@ -246,6 +251,14 @@ body {
   line-height: normal;
   letter-spacing: -0.16px;
 }
+@media screen and (max-width: 405px) {
+  .date__week {
+    font-size: 25px;
+  }
+  .date__date-number {
+    font-size: 45px;
+  }
+}
 
 .program {
   margin-top: 10px;
@@ -277,6 +290,9 @@ body {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+}
+.program__img {
+  margin-right: 5px;
 }
 .program__item {
   display: flex;
@@ -311,6 +327,11 @@ body {
   font-weight: 500;
   line-height: normal;
   margin-bottom: 15px;
+}
+@media screen and (max-width: 405px) {
+  .program__item-body {
+    font-size: 16px;
+  }
 }
 
 .map {
@@ -364,6 +385,7 @@ body {
 }
 .map__iframe {
   max-width: 400px;
+  height: 200px;
   width: 100%;
   margin-top: 10px;
   border-radius: 10px;

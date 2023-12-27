@@ -32,7 +32,9 @@
     line-height: normal;
   }
 
-  &__img {}
+  &__img {
+    margin-right: 5px;
+  }
 
   &__item {
     display: flex;
@@ -70,5 +72,11 @@
     font-weight: 500;
     line-height: normal;
     margin-bottom: 15px;
+  }
+
+  @media screen and (max-width: 405px) {
+    &__item-body {
+      font-size: 16px;
+    }
   }
 }
