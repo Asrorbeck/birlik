@@ -27,7 +27,6 @@ function toggleMenu() {
   overlay.style.display = overlay.style.display === 'block' ? 'none' : 'block';
 }
 
-
 const musicControl = document.getElementById("navbar__btn");
 const audio = document.getElementById("background-music");
 const musicIcon = document.getElementById("music-icon");
@@ -79,3 +78,7 @@ musicControl.addEventListener("click", function () {
 
   isPlaying = !isPlaying;
 });
+
+
+
+
