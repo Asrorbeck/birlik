@@ -1,0 +1,72 @@
+.map {
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__adres {
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  &__btn {
+    border: none;
+    outline: none;
+    background: none;
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 4px 5px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+  }
+
+  &__header {
+    color: #412501;
+    text-align: center;
+    text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.31);
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 11px;
+  }
+
+  &__hilton {
+    max-width: 200px;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  &__iframe {
+    max-width: 400px;
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 10px;
+  }
+
+  &__subheader {
+    color: #FFF;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 11px;
+  }
+}
