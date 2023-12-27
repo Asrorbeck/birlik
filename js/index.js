@@ -30,7 +30,6 @@ function toggleMenu() {
 const musicControl = document.getElementById("navbar__btn");
 const audio = document.getElementById("background-music");
 const musicIcon = document.getElementById("music-icon");
-const musicSource = document.getElementById("music-source");
 
 let isPlaying = true;
 
@@ -43,11 +42,7 @@ function closeModal() {
 }
 
 yesBtn.addEventListener("click", function () {
-  // Change the source based on the user's device
-  const musicFile = isIOS() ? "./music/music.aiff" : "./music/music.mp3";
-  musicSource.src = musicFile;
-
-  audio.muted = false;
+  audio.muted = false
   audio.play();
   musicIcon.src = "./img/unmute.svg";
   closeModal();
@@ -69,14 +64,11 @@ window.addEventListener("click", function (event) {
 
 window.onload = function () {
   modal.style.display = "block";
-};
+}
 
 musicControl.addEventListener("click", function () {
   if (isPlaying) {
-    const musicFile = isIOS() ? "./music/music.aiff" : "./music/music.mp3";
-    musicSource.src = musicFile;
-
-    audio.muted = false;
+    audio.muted = false
     audio.play();
     musicIcon.src = "./img/unmute.svg";
   } else {
@@ -86,12 +78,6 @@ musicControl.addEventListener("click", function () {
 
   isPlaying = !isPlaying;
 });
-
-// Function to check if the user is using an iOS device
-function isIOS() {
-  return /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
-}
-
 
 
 
