@@ -29,6 +29,7 @@
     padding-right: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
+    padding-bottom: 25px;
     height: 80vh;
     border-radius: 11px;
   }
@@ -69,6 +70,17 @@
     line-height: 121.429%;
     max-width: 140px;
     width: 100%;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
+  }
+
+  &__book {
+    color: #423D37;
+    font-family: Montserrat;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    max-width: 300px;
+    width: 100%;
   }
 }

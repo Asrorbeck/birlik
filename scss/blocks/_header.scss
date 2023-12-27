@@ -8,3 +8,25 @@ body {
   background-position: center;
   background-attachment: fixed;
 }
+
+.head {
+  margin-top: 35px;
+}
+
+.head__container {
+  border-radius: 9px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: inherit;
+    background: rgba(115, 93, 84, 0.70);
+    filter: blur(2px);
+    z-index: -1;
+  }
+}
