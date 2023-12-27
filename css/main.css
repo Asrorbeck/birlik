@@ -60,7 +60,7 @@ body {
 }
 
 .hero {
-  height: 100vh;
+  height: 60vh;
 }
 .hero__subheader-wrapper {
   display: flex;
