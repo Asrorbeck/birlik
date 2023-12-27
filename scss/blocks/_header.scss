@@ -173,8 +173,6 @@
 .arrow {
   position: absolute;
   left: 50%;
-  -webkit-transform: translate(-50%);
-  -ms-transform: translate(-50%);
   transform: translate(-50%);
   top: calc(50% + 220px);
   -webkit-transform: rotate(0deg);
