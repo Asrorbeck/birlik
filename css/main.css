@@ -130,6 +130,7 @@ body {
   color: #5f5f5f;
   font-size: 15px;
   font-weight: 400;
+  font-family: "Montserrat";
 }
 
 .menu-open {
@@ -138,6 +139,7 @@ body {
 
 .menu-button {
   cursor: pointer;
+  margin-left: 20px;
 }
 
 .menu-icon {
@@ -170,12 +172,6 @@ body {
   /* Adjust the right position */
 }
 
-.navbar__logo {
-  font-size: 20px;
-  color: #fff;
-  font-family: Montserrat;
-}
-
 .navbar {
   position: fixed;
   top: 0;
@@ -187,15 +183,16 @@ body {
   z-index: 100;
   padding: 5px 0;
   display: flex;
-  align-items: center;
   width: 100%;
-  justify-content: space-evenly;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .navbar__btn {
   background: 0 0;
   border: none;
   cursor: pointer;
+  margin-right: 20px;
 }
 
 .modal {
@@ -296,7 +293,7 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 121.429%;
-  max-width: 140px;
+  max-width: 160px;
   width: 100%;
   padding-bottom: 20px;
 }
