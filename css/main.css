@@ -3,15 +3,6 @@
   /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: "Montserrat";
   font-style: normal;
-  font-weight: 600;
-  src: url("../fonts/montserrat-v26-latin-600.woff2") format("woff2"), url("../fonts/montserrat-v26-latin-600.ttf") format("truetype");
-  /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
-}
-@font-face {
-  font-display: swap;
-  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "Montserrat";
-  font-style: normal;
   font-weight: 400;
   src: url("../fonts/Montserrat-Regular.ttf") format("truetype");
 }
@@ -58,23 +49,33 @@ a {
   text-decoration: none;
 }
 
+body {
+  position: relative;
+}
+
+.bg-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.background-image {
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .container {
   max-width: 740px;
   margin-right: auto;
   margin-left: auto;
   padding-left: 20px;
   padding-right: 20px;
-}
-
-body {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  background-image: url("../../img/bg.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
 }
 
 .head {
@@ -136,10 +137,9 @@ body {
   color: #FFF;
   text-align: center;
   text-shadow: 0px 0px 6.8px #FFF, 0px 0px 6.2px rgba(255, 255, 255, 0.7), 0px 0px 4px rgba(255, 255, 255, 0.25), 0px 0px 4px rgba(255, 255, 255, 0.25), 0px 0px 4px rgba(115, 93, 84, 0.67);
-  font-family: "Vollkorn";
+  font-family: "Montserrat";
   font-size: 55px;
-  font-style: italic;
-  font-weight: 700;
+  font-weight: 600;
   line-height: normal;
   margin-bottom: 55px;
 }
@@ -178,9 +178,14 @@ body {
   max-width: 300px;
   width: 100%;
 }
+@media screen and (max-width: 425px) {
+  .hero__header {
+    font-size: 50px;
+  }
+}
 @media screen and (max-width: 405px) {
   .hero__header {
-    font-size: 45px;
+    font-size: 40px;
   }
 }
 
@@ -192,6 +197,16 @@ body {
   padding-left: 10px;
   padding-right: 10px;
   margin-top: 60px;
+}
+.date__exact-time {
+  color: #412501;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.18px;
 }
 .date__calendar {
   max-width: 700px;
@@ -558,5 +573,5 @@ body {
 }
 .footer__logo-link {
   width: 40px;
-  margin-bottom: 120px;
+  margin-bottom: 40px;
 }/*# sourceMappingURL=main.css.map */
