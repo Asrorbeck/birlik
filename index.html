@@ -21,9 +21,40 @@
 
 <body>
     <div class="bg-container">
-
         <div class="background-image"></div>
     </div>
+
+    <header>
+        <div class="navbar">
+            <div class="menu-button" onclick="toggleMenu()">
+                <span class="menu-icon"><img src="./img/burger.svg" alt=""></span>
+            </div>
+
+            <a href="#" class="navbar__logo">SOKOLOV</a>
+
+            <button id="navbar__btn" class="navbar__btn"><img width="20" id="music-icon" src="./img/mute.svg"
+                    alt="mute music">
+            </button>
+        </div>
+
+        <div class="menu-overlay" onclick="toggleMenu()"></div>
+
+        <div class="menu">
+            <div class="menu-header">
+                <span class="close-button" onclick="toggleMenu()">&times;</span>
+            </div>
+
+            <ul>
+                <li><a href="#invit">Приглашаем Вас!</a></li>
+
+                <li><a href="#map">Как добраться?</a></li>
+
+                <li><a href="#plan">План мероприятия</a></li>
+
+                <li><a href="#time">До открытия осталось...</a></li>
+            </ul>
+        </div>
+    </header>
 
     <main class="main">
         <section class="hero">
@@ -218,6 +249,18 @@
         </section>
     </main>
 
+    <audio id="background-music" style="display: none" loop muted>
+        <source src="./music/music.m4a" type="audio/mp4">
+        Your browser does not support the audio element.
+    </audio>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <p>Открыть с музыкой?</p>
+            <button class="modal-button" id="yesBtn">Да</button>
+            <button class="modal-button" id="noBtn">Нет</button>
+        </div>
+    </div>
 
 </body>
 
