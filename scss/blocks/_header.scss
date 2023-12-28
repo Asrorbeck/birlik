@@ -16,8 +16,10 @@
     left: 0;
     z-index: -1;
     border-radius: inherit;
-    background: linear-gradient(rgba(115, 93, 84, 0.5), rgba(115, 93, 84, 0.5));
-    filter: blur(2px);
+    background: linear-gradient(rgba(115, 93, 84, 0.6), rgba(115, 93, 84, 0.6));
+    backdrop-filter: 0.5px;
+    -webkit-backdrop-filter: blur(0.5px);
+    filter: blur(0.5px);
   }
 }
 
